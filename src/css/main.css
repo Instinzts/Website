@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    text-align: center;
+}
+
+.container {
+    color: aliceblue;
+    box-sizing: content-box;
+    border: solid #5B6DCD 8px;
+    margin: 100px;
+}
+/* Just For Right Now: Editing Image Later Since Its Just For Development Period */
+.image {
+   background-color: white;
+   width: 200px;
+   height: 200px;
+   margin: 40px;
+}
