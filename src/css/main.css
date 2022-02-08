@@ -1,20 +1,100 @@
 body {
-    background-color: black;
-    color: white;
-    font-family: monospace;
+  transition: 0.3s;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(244, 241, 241);
+  font-family: 'Poppins', sans-serif;
+  color:rgb(57, 57, 57);
+}
+.main {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
+    font-size: 60px;
+    margin-top: 50px;
+    line-height: 70px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+.switch {
+  width: 80px;
+  height: 40px;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: rgb(39, 38, 38);
+  position: relative;
 }
 
-.container {
-    color: aliceblue;
-    box-sizing: content-box;
-    border: solid #5B6DCD 8px;
-    margin: 100px;
+.flicker {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  transition: 0.3s;
+  box-shadow: 
+    inset 4px 4px 4px rgb(255,255,255),
+    inset -4px -4px 4px rgb(195 193 198 / 90%);
 }
-/* Just For Right Now: Editing Image Later Since Its Just For Development Period */
-.image {
-   background-color: white;
-   width: 200px;
-   height: 200px;
-   margin: 40px;
+
+.dark {
+  background-color: rgb(57, 57, 57);
+  transition: 0.3s;
+}
+
+.moon {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+  position: absolute;
+  top: 5px;
+  left: 45px;
+}
+
+.dark .flicker {
+  transform: translateX(40px);
+}
+
+.dark > * {
+ color:rgb(255, 255, 255);
+}
+
+.landing {
+    text-align: center;
+    margin-top: 15px;
+}
+.landing p {
+   font-size: 18px;
+    font-weight: 500;
+}
+.content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(253, 170, 170);
+    color: black;
+    padding: 0px 20px 10px;
+    margin: 0px 10px;
+    border-radius: 20px;
+}
+.time span:nth-child(1) {
+    font-size: 50px;
+    color:rgb(57, 57, 57);
+    font-weight: 500;
+}
+.time span:nth-child(2) {
+    font-weight: 500;
+    color:rgb(57, 57, 57);
+    margin-top: -8px;
 }
